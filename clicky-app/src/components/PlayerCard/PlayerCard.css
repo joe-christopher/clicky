@@ -3,6 +3,8 @@
   margin-bottom: 10px;
   border: none;
   text-align: center;
+  flex-flow: row wrap;
+
 }
 
 .allImages img {
@@ -12,4 +14,11 @@
   max-height: 250px;
   max-width: 250px;
   background-color:gray;
+
 }
+
+.card {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+

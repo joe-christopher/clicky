@@ -22,7 +22,7 @@ handleClick =(id, clicked) => {
         });
         return this.setState({
             image: imageOrder.sort(() => Math.random() - 0.5),
-            message: "Clicked player more then once, GAME OVER!",
+            message: "You clicked on the same player more then once, GAME OVER!",
             score: 0
         })
     }
@@ -40,7 +40,7 @@ handleClick =(id, clicked) => {
 
         return this.setState({
             image: imageOrder.sort(() => Math.random() - 0.5),
-            message: "Correct!  Click a new player",
+            message: "Correct!  Click a new player...",
             score: updatedScore,
             highScore: currentHighScore,
         })
@@ -49,7 +49,7 @@ handleClick =(id, clicked) => {
 
 render() {
     return (
-        <div className="allCards">
+        <div className="allCards container-fluid">
         <div className="gameMsgs text-center">
             <p>{this.state.message}</p>
         </div>
